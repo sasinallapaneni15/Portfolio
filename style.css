@@ -1,0 +1,348 @@
+
+html {
+    zoom: 100%;
+}
+*{
+    font-style: italic;
+}
+.logo {
+    float: left;
+    padding-left: 100px;
+    display: flex;
+    font-size: 50px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 250px;
+}
+.bgimg {
+    outline: 400px solid black;
+    color: #fff;
+    background-image: url("bgimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin:auto;
+}
+.special {
+    font-weight: 900;
+    color: rgb(89, 89, 239);
+}
+.main {
+    font-size: 25;
+    margin-top: 0%;
+    max-width: 100%;
+    height: 650px;
+    padding-left: 100px;
+    padding-top: 150px;
+}
+.main h1 {
+    margin: 0%;
+}
+.main pre {
+    margin-top: 5px;
+}
+.text {
+    float: left;
+    width: 65%;
+}
+.text h1 {
+    font-size: 3em;
+    font-weight: 900;
+}
+.textcol {
+    width: 100%;
+}
+.textcol img {
+    display: flex;
+    width: 450px;
+    height: 450px;
+    border-radius: 100%;
+    border: 2px solid rgb(89, 89, 239);
+}
+nav ul {
+    flex: 1;
+    text-align: right;
+    padding-right: 30px;
+    font-size: 25;
+    text-align: right;
+    list-style-type: none;
+    margin: 0%;
+    padding: 10px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: rgb(89, 89, 239);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+nav ul li a:hover {
+    color: aqua;
+}
+.aboutme {
+    padding-left: 50px;
+    font-size: 25;
+    width: 1800px;
+    height: 350px;
+}
+.aboutme h1 {
+    color: rgb(89, 89, 239);
+    font-size: 2em;
+}
+.aboutme p {
+    font-size: 25;
+}
+.text a {
+    font-weight: 600;
+    color: rgb(89, 89, 239);
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid rgb(89, 89, 239);
+}
+.text a:hover {
+    background-color: rgb(89, 89, 239);
+    color: #fff;
+    transition: background-color 0.5s;
+}
+.time {
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.con {
+    padding: 10px 50px;
+    position: relative;
+    width: 50%;
+    animation: movedown 1s linear forwards;
+    opacity: 0;
+}
+@keyframes movedown {
+    0% {
+        opacity: 1;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.con:nth-child(1) {
+    animation-delay: 0s;
+}
+.con:nth-child(2) {
+    animation-delay: 1s;
+}
+.con:nth-child(3) {
+    animation-delay: 2s;
+}
+.text-box {
+    padding: 20px 30px;
+    position: relative;
+    background-color: aqua;
+    border-radius: 6px;
+    font-size: 15px;
+}
+.lef {
+    left: 0;
+}
+.rig {
+    left: 58.4%;
+}
+.con img {
+    position: absolute;
+    width: 40px;
+    border-radius: 50%;
+    right: -20px;
+    top: 20px;
+    z-index: 10;
+}
+.rig img {
+    left: -20px;
+}
+.time::after {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 100%;
+    background: aqua;
+    top: 0;
+    left: 50%;
+    margin-left: 95px;
+    z-index: -1;
+    animation: moveline 3s linear forwards;
+}
+@keyframes moveline {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
+.text-box p {
+    font-weight: 600;
+    font-size: 20;
+}
+.text-box h2 {
+    font-size: 30;
+    font-weight: 900;
+}
+.text-box small {
+    font-weight: 800;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.lef-arr {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid aqua;
+    right: -15px;
+}
+.rig-arr {
+    height: 0;
+    width: 0;
+    position: absolute;
+    top: 28px;
+    z-index: 1;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid aqua;
+    left: -15px;
+}
+.edu {
+    padding-left: 50px;
+    width: 1800px;
+    height: auto;
+}
+.edu h1 {
+    color: rgb(70, 70, 231);
+    font-size: 3em;
+}
+.skills{
+    color:rgb(53, 14, 230);
+    font-size: 40px;
+}
+.skillcon {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 2rem;
+    padding: 1rem 80px;
+    font-size: 2.5rem;
+}
+.skillbox {
+    padding:1rem;
+    cursor: pointer;
+}
+.skilltit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    position: relative;
+}
+.skilltit:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    height: 4px;
+    border-radius: 2px 0 0 2px;
+    background-color: rgb(15, 15, 163);
+    transition: .5s;
+}
+.skilltit:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: rgb(89, 89, 239);
+    transition: .5s;
+}
+.skillbox:hover > .skilltit:after ,.skillbox:hover > .skilltit:before {
+    width: 35px;
+}
+.skillbox:hover .skillimg {
+    transform: translateY(-10px);
+}
+.skillimg:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    background: rgba(100,100,100,0.5);
+    border-radius: 45px 0 0 45px;
+}
+.skillimg {
+    width: 90px;
+    height: 90px;
+    position: relative;
+    border-radius: 45px;
+    display: flex;
+    background-color: rgb(221, 151, 151);
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.skilltit h3 {
+    color: rgb(89, 89, 239);
+    margin-top: 0.5rem;
+}
+.skill-icon {
+    width: 50px;
+    z-index: 2;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    color: white;
+    outline: 50px solid black;
+    height: auto;
+    text-align: center;
+    background-color: black;
+}
+.add {
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+.contact {
+    padding-right: 30px;
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+footer h1 {
+    padding-top: 30px;
+    font-size: 3em;
+    font-weight: 900;
+}
+footer address {
+    padding-bottom: 20px;
+}
+footer address a {
+    text-decoration: none;
+    color: rgb(89, 89, 239);
+}
+footer address p {
+    font-weight: 500;
+    font-size: 20;
+}
